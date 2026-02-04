@@ -44,11 +44,11 @@ export class BootScene extends Phaser.Scene {
   }
 
   private createPlaceholderAssets(): void {
-    // Create player sprite (green square for now)
+    // Create player sprite (red square)
     const playerGraphics = this.make.graphics({ x: 0, y: 0 });
-    playerGraphics.fillStyle(0x4a7c4e, 1);
+    playerGraphics.fillStyle(0xff0000, 1);
     playerGraphics.fillRect(0, 0, 32, 32);
-    playerGraphics.lineStyle(2, 0x2d4a2f);
+    playerGraphics.lineStyle(2, 0xaa0000);
     playerGraphics.strokeRect(0, 0, 32, 32);
     // Add a direction indicator (front)
     playerGraphics.fillStyle(0xf5deb3, 1);
