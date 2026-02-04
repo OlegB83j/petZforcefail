@@ -1,0 +1,15 @@
+before-command: |-
+  #!/bin/bash
+  set -e
+
+  npm ci
+preview-commands:
+  - id: dev-server
+    title: Development Server
+    description: Starts the Vite development server for the Zombie Survival game
+    command: |-
+      #!/bin/bash
+      set -e
+
+      npm run dev -- --host 0.0.0.0
+preview-port: 3000
